@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    </title>Welcome to my Website</title>
+        <link rel="stylesheet" href="style.css">
+    
+        </head>
+        <body>
+            <div id="header">
+                <div class="container">   
+                    <nav>
+                        <img src="images/logo.png" class="logo">
+                        <ul>
+                            <li><a href="#"> Home </a></li>
+                            <li><a href="#"> About </a></li>
+                            <li><a href="#"> Service </a></li>
+                            <li><a href="#"> Design </a></li>
+                            <li><a href="#"> Contact </a></li>   
+                        </ul>
+                    </nav>
+                    <div class="header-text"></div>
+                         <h1>Hi, I'm<span> Deserrie Gumonit</span><br>Web App Developer<span></span><br> and UI/UX Designer</h1>
+                        </div>
+                    </div>
+                </div>     
+            </div>
+            <!---------------------about-------------->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                                <img src="images/pic.2images.jpg">
+                            </div>
+                            <div class="about-col-2">
+                                <h1 class="sub-title"> About Me</h1>
+           <p>I'm a UI/UX designer with a passion for creating beautiful user-friendly web experience. I am excited about 
+              the opportunity to bring my unique blend of creativity, technical skill, and knowledge. I am confident that
+              my experience and passion for design would make a valuable addition to the company.</p>
+              
+           <div class="tab-titles">
+            <p class="tab-link active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-link"  onclick="opentab('experience')">Experience</p>
+            <p class="tab-link"  onclick="opentab('educational')">Educational</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+            <ul>
+                <li><span>UI/UX</span><br>Web Designer</li>
+            
+            </ul>
+        </div>
+        <div class="tab-contents" id="email address">
+            <ul>
+                <li><span> </span><br><deserriegumonitgmail class="com"></deserriegumonitgmail></li>
+                
+            </ul>
+        </div>
+        <div class="tab-contents" id="educational">
+            <ul>
+                <li><span>2018</span><br>Design Manager at MBS</li>
+                <li><span>2017</span><br>Design Training at INC Institute</li>
+            </ul>
+         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!------------project--------->
+<div id="project">
+    <div class="conatiner">
+        <h1 class="sub-title"> My Project</h1>
+        <div class="project-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet. Et iste asperiores in veniam impedit et reiciendis nulla 33 exercitationem doloribus aut nihil laboriosam? Est necessitatibus ipsam cum voluptas nemo cum voluptas culpa? 33 expedita quidem qui blanditiis mollitia sed saepe modi non error veritatis eos illo sint sed maxime quia. Quo vitae esse id tenetur voluptatem et libero magni ut dolores quaerat At minus ipsa ut accusantium officia.</p>
+            <p>Lorem ipsum dolor sit amet. Et iste asperiores in veniam impedit et reiciendis nulla 33 exercitationem doloribus aut nihil laboriosam? Est necessitatibus ipsam cum voluptas nemo cum voluptas culpa? 33 expedita quidem qui blanditiis mollitia sed saepe modi non error veritatis eos illo sint sed maxime quia. Quo vitae esse id tenetur voluptatem et libero magni ut dolores quaerat At minus ipsa ut accusantium officia.</p>
+            <a href="#">Learn more</a>
+        </div>
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet. Et iste asperiores in veniam impedit et reiciendis nulla 33 exercitationem doloribus aut nihil laboriosam? Est necessitatibus ipsam cum voluptas nemo cum voluptas culpa? 33 expedita quidem qui blanditiis mollitia sed saepe modi non error veritatis eos illo sint sed maxime quia. Quo vitae esse id tenetur voluptatem et libero magni ut dolores quaerat At minus ipsa ut accusantium officia.</p>
+               <p>Lorem ipsum dolor sit amet. Et iste asperiores in veniam impedit et reiciendis nulla 33 exercitationem doloribus aut nihil laboriosam? Est necessitatibus ipsam cum voluptas nemo cum voluptas culpa? 33 expedita quidem qui blanditiis mollitia sed saepe modi non error veritatis eos illo sint sed maxime quia. Quo vitae esse id tenetur voluptatem et libero magni ut dolores quaerat At minus ipsa ut accusantium officia.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+        </div>
+    </div>
+<!------------contact------------>
+<div id="contact">
+<div class="conatiner">
+    <div class="row">
+       <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fas fa-paper-plane"></i>contact.com</p>
+        <p><i class="fas fa-phone-square-alt"></i>09476545251</p>
+        <div class="social-icons">
+            <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter-square"></i></a>
+            <a href=""><i class="fab fa-Instagram"></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+        </div>
+        <a href=""  class="btn btn2">Ddownload CV</a>
+       </div>
+       <div class="contact-right"></div>
+       <form>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email required">
+        <textarea name="Message"rows="6" placeholder="Your Message"></textarea>
+        <button type="submit">Submit</button>
+       </form>
+    </div>
+</div>
+
+</div>
+
+<script>
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+for (tablinks of tablinks){
+tablink.classList.remove("active-link");
+}
+for (tabcontents of tabcontents){
+tabcontents.classList.remove("active-tab");
+}
+event.currentTarget.classList.add("active-link");
+document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+</body>
+</html>
+
+   
